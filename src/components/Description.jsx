@@ -1,6 +1,6 @@
-import React from "react"
-import Styled from "styled-components"
-import Buttons from "./UI/Button"
+import React from "react";
+import Styled from "styled-components";
+import Buttons from "./UI/Button";
 
 const Styles = Styled.div`
 font-family: 'Montserrat', sans-serif;
@@ -50,15 +50,17 @@ font-weight:600
     
 }
 
-`
+`;
 const Description = () => {
-    return <Styles>
-        <h4>Hello World!</h4>
-        
-        <h2>I'm Maya</h2>
-        <p>Your Daram my theme...I'm UI/UX Designer And I'm Creative designer.</p>
-<Buttons />
-    </Styles>;
-}
- 
+  return (
+    <Styles>
+      <h4>Hello World!</h4>
+
+      <h2>I'm Maya</h2>
+      <p>Your Daram my theme...I'm UI/UX Designer And I'm Creative designer.</p>
+      <Buttons />
+    </Styles>
+  );
+};
+
 export default Description;

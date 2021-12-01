@@ -1,11 +1,9 @@
-import REACT from "react";
 import Styled from "styled-components";
 import Navigation from "./Navigation";
-import { Container, Row, Col } from "react-bootstrap";
 import ImageFrame from "./ImageFrame";
 import Description from "./Description";
 
-const Fluid__container = Styled.section`
+const Styles = Styled.section`
 
 
 
@@ -48,22 +46,19 @@ const Fluid__container = Styled.section`
 
 const Card = () => {
   return (
-    <Fluid__container>
-    
-        <Navigation />
-        
-          <Row className="wrap__row">
-            <Col lg={6} md={12} className="wrap">
-              <ImageFrame />
-            </Col>
+    <Styles>
+      <Navigation />
 
-            <Col lg={6} className="desc__wrap">
-              <Description />
-            </Col>
-          </Row>
-       
-      
-    </Fluid__container>
+      <Row className="wrap__row">
+        <Col lg={6} md={12} className="wrap">
+          <ImageFrame />
+        </Col>
+
+        <Col lg={6} className="desc__wrap">
+          <Description />
+        </Col>
+      </Row>
+    </Styles>
   );
 };
 

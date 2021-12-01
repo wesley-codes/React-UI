@@ -1,6 +1,5 @@
 import "./App.css";
 import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
 import Card from "./components/Card";
 
 const Box = styled.div`
