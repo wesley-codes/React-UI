@@ -23,16 +23,17 @@ justify-content : end;
  
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background: linear-gradient(180deg, #290321 0%, #030B29 100%);
-    border-left: 1.5px solid #ADADAD;
+    border: 2px solid ;
     border-width: thin;
-    border-right: 1.5px solid #ADADAD;
-    border-width: thin;
+    border-top:none;
     border-radius: 0px 0px 63.7222px 63.7222px;
-    border-top: none;
     height: 90.72px;
+    border-bottom:none;
+    border-image: linear-gradient(180deg, #0A0A0A 0%, #FFFFFF 54.22%, rgba(2, 2, 2, 0.96) 100%)0 0 10px 23px repeat stretch;;
     
   }
 
+  
 & a{
  padding:50px;
 }
