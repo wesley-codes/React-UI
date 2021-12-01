@@ -25,10 +25,12 @@ justify-content : end;
  
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background: linear-gradient(180deg, #290321 0%, #030B29 100%);
-    border:1px solid white;
     border-radius: 0px 0px 63.7222px 63.7222px;
+    border-left: 1px solid #ADADAD;
+    border-right: 1px solid #ADADAD;
     border-top: none;
     height: 90.72px;
+    
   }
     
   .navbar-expand .navbar-nav {
@@ -43,6 +45,7 @@ justify-content : end;
    
     width: 100%;
     justify-content: space-between;
+    text-align:center;
 }
 }
 
