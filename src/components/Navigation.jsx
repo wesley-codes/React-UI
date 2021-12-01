@@ -15,26 +15,38 @@ justify-content : end;
     color:white;
     font-size:0.8em;
     font-weight:600;
-    
-
-}
+  }
 
  .navbar-expand {
   padding-top:0;
-}
+  }
  
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background: linear-gradient(180deg, #290321 0%, #030B29 100%);
+    border-left: 1.5px solid #ADADAD;
+    border-width: thin;
+    border-right: 1.5px solid #ADADAD;
+    border-width: thin;
     border-radius: 0px 0px 63.7222px 63.7222px;
-    border-left: 1px solid #ADADAD;
-    border-right: 1px solid #ADADAD;
     border-top: none;
     height: 90.72px;
     
   }
+
+& a{
+ padding:50px;
+}
+
+  .nav-link{
+    border-radius: 0px 0px 63.7222px 63.7222px;
+    
+  }
+
+/*   .nav-link{
+    padding-top:50%;
+  } */
     
   .navbar-expand .navbar-nav {
-   
     width: 60%;
     justify-content: space-between;
 }
