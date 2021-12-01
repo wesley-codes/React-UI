@@ -1,14 +1,10 @@
 import Styled from "styled-components";
 import Navigation from "./Navigation";
+import {Row, Col} from "react-bootstrap"
 import ImageFrame from "./ImageFrame";
 import Description from "./Description";
 
 const Styles = Styled.section`
-
-
-
-
-
 .wrap{
     
     display:flex;
@@ -47,17 +43,20 @@ const Styles = Styled.section`
 const Card = () => {
   return (
     <Styles>
-      <Navigation />
+    
+        <Navigation />
+        
+          <Row className="wrap__row">
+            <Col lg={6} md={12} className="wrap">
+              <ImageFrame />
+            </Col>
 
-      <Row className="wrap__row">
-        <Col lg={6} md={12} className="wrap">
-          <ImageFrame />
-        </Col>
-
-        <Col lg={6} className="desc__wrap">
-          <Description />
-        </Col>
-      </Row>
+            <Col lg={6} className="desc__wrap">
+              <Description />
+            </Col>
+          </Row>
+       
+      
     </Styles>
   );
 };
